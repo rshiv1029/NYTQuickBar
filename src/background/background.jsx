@@ -21,14 +21,14 @@ function callNYT() {
     });
 }
 
-function clickTopArticles() {
-  const response = JSON.parse(callNYT());
-  const results = response.results
-  return results.map(function (result) {
-    return (
-        <div>{result.title}</div>
-    )
-  })
-}
+// function clickTopArticles() {
+//   const response = JSON.parse(callNYT());
+//   const results = response.results
+//   return results.map(function (result) {
+//     return (
+//         <div>{result.title}</div>
+//     )
+//   })
+// }
 
 export default callNYT;
